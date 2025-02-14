@@ -22,7 +22,6 @@ export class AddComponent {
       city: ['', Validators.required],
     });
 
-    this.contactForm.controls["firstName"].addValidators([Validators.minLength(1), Validators.maxLength(30)]);
   }
 
   addContact(){
