@@ -21,7 +21,7 @@
             <label for="city">City</label>
             <input type="text" id="city" formControlName="city" />
           </div>
-          <button type="submit">Edit Contact</button>
+          <button type="submit" [disabled]="!contactForm.valid">Edit Contact</button>
         </form>
       </div>
 </ng-template>
